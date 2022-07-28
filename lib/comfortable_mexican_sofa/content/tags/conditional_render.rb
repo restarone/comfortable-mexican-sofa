@@ -31,5 +31,5 @@ class ComfortableMexicanSofa::Content::Tag::ConditionalRender < ComfortableMexic
   end
   
   ComfortableMexicanSofa::Content::Renderer.register_tag(
-    :conditional_render, ConditionalRender
+    :conditional_render, ComfortableMexicanSofa::Content::Tag::ConditionalRender
   )
