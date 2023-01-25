@@ -15,7 +15,8 @@ class ComfortableMexicanSofa::Content::ParamsParser
   ARRAY_OPEN      = %r{\[}
   ARRAY_CLOSE     = %r{\]}
   # INTEGER         = %r{\b[0-9]+\b}i
-  INTEGER         = %r{^-?\d+(\.\d+)?$}i
+  INTEGER         = %r{\b[+,-]?[0-9]+\b}i
+  
 
   # @param <String> string
   def initialize(string = "")
