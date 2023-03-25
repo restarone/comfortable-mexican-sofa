@@ -35,10 +35,12 @@ class Comfy::Cms::ContentController < Comfy::Cms::BaseController
 protected
 
   def render_page(status = :ok)
-    render  inline:       @cms_page.content_cache,
-            layout:       app_layout,
-            status:       status,
-            content_type: mime_type
+    http_cache_forever(public: true) do
+      render  inline:       @cms_page.content_cache,
+              layout:       app_layout,
+              status:       status,
+              content_type: mime_type
+    end
   end
 
   # it's possible to control mimetype of a page by creating a `mime_type` field
