@@ -35,7 +35,7 @@ class Comfy::Cms::ContentController < Comfy::Cms::BaseController
 protected
 
   def render_page(status = :ok)
-    http_cache_forever(public: true) do
+    http_cache_forever(public: false) do
       render  inline:       @cms_page.content_cache,
               layout:       app_layout,
               status:       status,
