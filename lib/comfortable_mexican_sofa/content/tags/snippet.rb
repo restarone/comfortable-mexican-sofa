@@ -18,7 +18,11 @@ class ComfortableMexicanSofa::Content::Tag::Snippet < ComfortableMexicanSofa::Co
   end
 
   def content
-    snippet.content
+    if snippet.markdown
+      Kramdown::Document.new(snippet.content.to_s).to_html
+    else
+      snippet.content
+    end
   end
 
   # Grabbing or initializing Comfy::Cms::Snippet object
