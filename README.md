@@ -1,6 +1,6 @@
 # ComfortableMexicanSofa
 
-ComfortableMexicanSofa is a powerful Ruby on Rails 5.2+ CMS (Content Management System) Engine
+ComfortableMexicanSofa is a powerful Ruby on Rails 5.2-7.0+ CMS (Content Management System) Engine
 
 [![Gem Version](https://img.shields.io/gem/v/comfortable_mexican_sofa.svg?style=flat)](http://rubygems.org/gems/comfortable_mexican_sofa)
 [![Gem Downloads](https://img.shields.io/gem/dt/comfortable_mexican_sofa.svg?style=flat)](http://rubygems.org/gems/comfortable_mexican_sofa)

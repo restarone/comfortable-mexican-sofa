@@ -3,7 +3,11 @@
 = form.text_field :label, data: {slugify: @snippet.new_record?}
 = form.text_field :identifier, data: {slug: true}
 = form.check_box :markdown
-= form.text_area :content, data: {'cms-cm-mode' => 'text/html'}
+
+- if @snippet.markdown
+  = form.text_area :content, data: {'cms-cm-mode' => 'text/x-markdown'}
+- else
+  = form.text_area :content, data: {'cms-cm-mode' => 'text/html'}
 
 = render 'comfy/admin/cms/categories/form', form: form
 

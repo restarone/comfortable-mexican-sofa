@@ -42,12 +42,7 @@ defined?(ComfortableMexicanSofa::Application) && ComfortableMexicanSofa::Applica
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
-
   config.active_job.queue_adapter = :inline
-
-  config.action_view.raise_on_missing_translations = true
 
   # TODO: This is temporary fix so TravisCI runs until Rails 5.2.3 is out.
   # See: https://github.com/rails/rails/pull/35607
